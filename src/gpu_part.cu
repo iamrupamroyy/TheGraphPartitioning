@@ -1352,7 +1352,7 @@ int main(int argc, char* argv[]) {
     std::cout << std::left << std::setw(35) << "Maximum Memory Used:" << std::right << std::setw(10) << std::fixed << std::setprecision(2) << maxMemoryUsed << " MB\n\n";
 
     std::cout << "************************** Amitesh Singh **************************\n";
-    std::cout << "************************** Rupam Roy **************************\n";
+    std::cout << "**************************** Rupam Roy ****************************\n";
     std::cout << "************** Indian Institute of Technology Bhilai **************\n";
 
     // Clean up allocated memory.
