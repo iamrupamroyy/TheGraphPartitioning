@@ -1,0 +1,1000 @@
+ 1015  nvcc LabelCoarsening.cu 
+ 1016  cd ..
+ 1017  cd amitesh/
+ 1018  ls
+ 1019  python citeseer.py 
+ 1020  python3 citeseer.py 
+ 1021  ls
+ 1022  cd citeseer_input/
+ 1023  ls
+ 1024  cd ..
+ 1025  nvcc LabelCoarsening.cu 
+ 1026  ./a.out ./citeseer_input/ 3327 9228
+ 1027  vim LabelCoarsening.cu 
+ 1028  nvcc LabelCoarsening.cu 
+ 1029  ./a.out ./citeseer_input/ 3327 9228
+ 1030  exit
+ 1031  nvcc 25thapril.cu 
+ 1032  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1033  nvcc 27thapril.cu 
+ 1034  nvcc 11thaprilfinal.cu 
+ 1035  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1036  nvcc 9thApril.cu
+ 1037  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1038  nvcc 11thaprilfinal.cu 
+ 1039  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1040  nvcc 27thapril.cu 
+ 1041  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1042  nvcc 27thapril.cu 
+ 1043  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1044  nvcc 27thaprilf.cu 
+ 1045  nvcc GNNcoarsening.cu 
+ 1046  ./a.out ./amazon0302_adj 262111 1799584 
+ 1047  ls
+ 1048  ./a.out ./citeseer_input/ 3327 9228
+ 1049  nvcc LabelCoarsening.cu 
+ 1050  ./a.out ./amazon0302_adj 262111 1799584 
+ 1051  vim merge_level_0.txt 
+ 1052  nvcc LabelCoarsening.cu 
+ 1053  nvcc GNNcoarsening.cu 
+ 1054  ./a.out ./amazon0302_adj 262111 1799584 
+ 1055  vim final_vertex_mapping.txt 
+ 1056  nvcc GNNcoarsening.cu 
+ 1057  ./a.out ./amazon0302_adj 262111 1799584 
+ 1058  python3 citeseer.py 
+ 1059  nvcc LabelCoarsening.cu 
+ 1060  python3 citeseer.py 
+ 1061  ./a.out ./citeseer_input/ 3327 9228
+ 1062  vim citeseer.py 
+ 1063  python3 citeseer.py 
+ 1064  nvcc LabelCoarsening.cu 
+ 1065  python3 citeseer.py 
+ 1066  ./a.out ./citeseer_input/ 3327 9228
+ 1067  nvcc GNNcoarsening.cu 
+ 1068  ./a.out ./amazon0302_adj 262111 1799584 
+ 1069  vim final_vertex_mapping.txt 
+ 1070  nvcc 27thaprilf.cu 
+ 1071  vim final_vertex_mapping.txt 
+ 1072  vim merge_level_0.txt 
+ 1073  nvcc CoarseningGNN.cu 
+ 1074  ./a.out ./amazon0302_adj 262111 1799584 
+ 1075  vim coarsened_row
+ 1076  vim coarsened_col_level15.txt 
+ 1077  nvcc CoarseningGNN.cu 
+ 1078  ./a.out ./amazon0302_adj 262111 1799584 
+ 1079  vim coarsened_row_level15.txt 
+ 1080  vim coarsened_row_level0.txt 
+ 1081  ls
+ 1082  ls -ltrh
+ 1083  sudo cp CoarseningGNN.cu /data/kishan/Framwork/
+ 1084  python3 citeseer.py 
+ 1085  cp citeseer.py /data/kishan/Framwork/graph_coarsaning/
+ 1086  sudo cp citeseer.py /data/kishan/Framwork/graph_coarsaning/
+ 1087  python3 citeseer.py 
+ 1088  nvcc CoarseningGNN.cu 
+ 1089  ./a.out ./amazon0302_adj 262111 1799584 
+ 1090  vim final_vertex_mapping.txt
+ 1091  nvcc GNNcoarsening.cu 
+ 1092  ./a.out ./amazon0302_adj 262111 1799584 
+ 1093  vim final_vertex_mapping.txt
+ 1094  cd twitch_gamer/
+ 1095  ls
+ 1096  vim column.txt 
+ 1097  cd ..
+ 1098  sudo cp GNNcoarsening.cu /data/kishan/Framwork/graph_coarsaning/
+ 1099  nvcc 27thaprilf.cu 
+ 1100  nvcc 20thapril.cu 
+ 1101  ./a.out ./amazon0302_adj 262111 1799584 8
+ 1102  nvcc GNNcoarsening.cu 
+ 1103  ./a.out ./amazon0302_adj 262111 1799584 
+ 1104  nvtop
+ 1105  nvcc GNNCoarsening.cu 
+ 1106  ./a.out ./amazon0302_adj 262111 1799584 
+ 1107  ls
+ 1108  du -d 1 -h
+ 1109  ls -ltrh
+ 1110  mkdir -p backup_txt_files
+ 1111  mv weight.txt column.txt row.txt backup_txt_files/
+ 1112  ls *.txt
+ 1113  ls -ltrh *.txt
+ 1114  mv *.txt backup_txt_files/
+ 1115  ls
+ 1116  exit
+ 1117  cd amazon0302_adj/
+ 1118  gpmetis temp.graph 8
+ 1119  cd ..
+ 1120  ls 
+ 1121  sudo cp -r amazon0302_adj/ /data/mpi_cluster/
+ 1122  pip list
+ 1123  nvcc GNNCoarsening.cu 
+ 1124  ./a.out ./amazon0302_adj 262111 1799584 
+ 1125  vim final_vertex_mapping.txt 
+ 1126  nvcc CoarseningGNN.cu 
+ 1127  ./a.out ./amazon0302_adj 262111 1799584 
+ 1128  vim CoarseningGNN.cu 
+ 1129  vim final_vertex_mapping.txt 
+ 1130  nvcc Acoarsening.cu 
+ 1131  ./a.out ./amazon0302_adj 262111 1799584 
+ 1132  vim final_vertex_mapping.txt 
+ 1133  nvcc Acoarsening.cu 
+ 1134  ./a.out ./amazon0302_adj 262111 1799584 
+ 1135  vim final_vertex_mapping.txt 
+ 1136  clear
+ 1137  vim final_vertex_mapping.txt 
+ 1138  nvcc Acoarsening.cu 
+ 1139  ./a.out ./amazon0302_adj 262111 1799584 
+ 1140  nvcc Acoarsening.cu 
+ 1141  ./a.out ./amazon0302_adj 262111 1799584 
+ 1142  vim final_vertex_mapping.txt 
+ 1143  nvcc Acoarsening.cu 
+ 1144  ./a.out ./amazon0302_adj 262111 1799584 
+ 1145  vim final_vertex_mapping.txt 
+ 1146  ls
+ 1147  nvcc Acoarsening.cu 
+ 1148  ./a.out ./amazon0302_adj 262111 1799584 
+ 1149  nvcc 27thaprilf.cu 
+ 1150  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1151  nvcc 2ndmay.cu 
+ 1152  [A
+ 1153  nvcc 2ndmay.cu 
+ 1154  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1155  nvcc 2ndmay.cu 
+ 1156  nvcc 27thaprilf.cu 
+ 1157  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1158  nvcc CoarseningPerfect.cu 
+ 1159  ./a.out ./amazon0302_adj 262111 1799584 
+ 1160  vim final_vertex_mapping.txt 
+ 1161  nvcc CoarseningPerfect.cu 
+ 1162  ./a.out ./amazon0302_adj 262111 1799584 
+ 1163  vim final_vertex_mapping.txt 
+ 1164  nvcc CoarseningPerfect.cu 
+ 1165  ./a.out ./amazon0302_adj 262111 1799584 
+ 1166  vim final_vertex_mapping.txt 
+ 1167  nvcc CoarseningPerfect.cu 
+ 1168  ./a.out ./amazon0302_adj 262111 1799584 
+ 1169  nvcc CoarseningPerfect.cu 
+ 1170  ./a.out ./amazon0302_adj 262111 1799584 
+ 1171  nvcc CoarseningPerfect.cu 
+ 1172  ./a.out ./amazon0302_adj 262111 1799584 
+ 1173  vim final_vertex_mapping.txt 
+ 1174  nvcc 27thaprilf.cu 
+ 1175  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1176  nvcc CoarseningPerfect.cu 
+ 1177  python3 citeseer.py 
+ 1178  nvcc CoarseningPerfect.cu 
+ 1179  ./a.out ./amazon0302_adj 262111 1799584 
+ 1180  python3 citeseer.py 
+ 1181  nvcc 2ndmay.cu 
+ 1182  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1183  nvcc 2ndmay.cu 
+ 1184  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1185  nvcc 11thaprilfinal.cu 
+ 1186  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1187  nvcc 9thApril.cu
+ 1188  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1189  nvcc 9thAprilf.cu
+ 1190  nvcc 9thAprilFinal.cu
+ 1191  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1192  nvcc 2ndmay.cu 
+ 1193  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1194  nvcc 2ndmay.cu 
+ 1195  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1196  nvcc 2ndmayf.cu 
+ 1197  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1198  nvcc 2ndmayf.cu 
+ 1199  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1200  nvcc 2ndmayf.cu 
+ 1201  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1202  nvcc 7thApril.cu 
+ 1203  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1204  nvcc 2ndmayf.cu 
+ 1205  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1206  nvcc 27thaprilf.cu 
+ 1207  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1208  ./a.out ./amazon0302_adj 262111 1799584 8
+ 1209  nvcc 25thapril.cu 
+ 1210  ./a.out ./amazon0302_adj 262111 1799584 8
+ 1211  nvcc 27thaprilf.cu 
+ 1212  nvcc 25thapril.cu 
+ 1213  ./a.out ./amazon0302_adj 262111 1799584 8
+ 1214  nvcc 25thapril.cu 
+ 1215  ./a.out ./amazon0302_adj 262111 1799584 8
+ 1216  exit
+ 1217  cd amazon0302_adj/
+ 1218  gpmetis temp.graph 2
+ 1219  gpmetis temp.graph 8
+ 1220  nvcc 25thapril.cu 
+ 1221  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1222  nvcc 20thapril.cu 
+ 1223  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1224  nvcc 19thapril.cu 
+ 1225  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1226  nvcc 17thaprilfinal.cu 
+ 1227  nvcc 17thapril.cu 
+ 1228  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1229  nvcc 15thaprilfinal.cu 
+ 1230  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1231  nvcc 11thaprilfinal.cu 
+ 1232  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1233  nvcc 4thapril.cu 
+ 1234  nvcc 4thmay.cu 
+ 1235  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1236  nvcc 4thmay.cu 
+ 1237  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1238  vim 11thaprilfinal.cu 
+ 1239  nvcc 4thmay.cu 
+ 1240  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1241  nvcc 4thmay.cu 
+ 1242  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1243  vim 11thaprilfinal.cu 
+ 1244  nvcc 11thaprilfinal.cu 
+ 1245  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1246  vim 11thaprilfinal.cu 
+ 1247  nvcc 11thaprilfinal.cu 
+ 1248  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1249  vim 11thaprilfinal.cu 
+ 1250  nvcc 11thaprilfinal.cu 
+ 1251  vim 11thaprilfinal.cu 
+ 1252  nvcc 11thaprilfinal.cu 
+ 1253  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1254  nvcc 11thaprilfinal.cu 
+ 1255  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1256  nvcc 27thaprilf.cu 
+ 1257  nvcc 25thapril.cu 
+ 1258  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1259  nvcc 11thaprilfinal.cu 
+ 1260  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1261  nvcc 4thmay.cu 
+ 1262  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1263  nvcc 25thapril.cu 
+ 1264  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1265  ./a.out ./amazon0302_adj 262111 1799584 4
+ 1266  nvcc 11thaprilfinal.cu 
+ 1267  ./a.out ./amazon0302_adj 262111 1799584 4
+ 1268  nvcc 9thAprilFinal.cu 
+ 1269  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1270  nvcc 7thApril.cu 
+ 1271  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1272  nvcc 11thaprilfinal.cu 
+ 1273  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1274  nvcc 25thapril.cu 
+ 1275  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1276  nvcc 20thapril.cu 
+ 1277  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1278  nvcc 21thapril.cu 
+ 1279  nvcc 20thapril.cu 
+ 1280  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1281  nvcc 25thapril.cu 
+ 1282  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1283  nvcc 4thmay.cu 
+ 1284  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1285  nvcc 19thapril.cu 
+ 1286  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1287  nvcc 19thapril.cu 
+ 1288  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1289  nvcc 4thmay.cu 
+ 1290  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1291  nvcc 25thapril.cu 
+ 1292  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1293  exit
+ 1294  cd amazon0302_adj/
+ 1295  gpmetis temp.graph 4
+ 1296  nvcc 9thaprilfinal.cu
+ 1297  nvcc 9thAprilfinal.cu
+ 1298  nvcc 9thAprilFinal.cu
+ 1299  cd..
+ 1300  cd ..
+ 1301  nvcc 5thmay.cu 
+ 1302  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1303  nvcc 5thmay.cu 
+ 1304  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1305  nvcc 5thmayfinal.cu 
+ 1306  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1307  nvcc 5thmayfinal.cu 
+ 1308  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1309  nvcc 5thmayfinal.cu 
+ 1310  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1311  nvtop
+ 1312  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1313  nvcc 19thapril.cu 
+ 1314  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1315  nvcc 5thmayfinal.cu 
+ 1316  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1317  vim 5thmayfinal.cu 
+ 1318  nvcc 5thmayfinal.cu 
+ 1319  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1320  vim 5thmayfinal.cu 
+ 1321  nvcc 5thmayfinal.cu 
+ 1322  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1323  nvtop
+ 1324  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1325  nvcc 5thmayfinal.cu 
+ 1326  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1327  vim finalpartition.txt 
+ 1328  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1329  nvtop
+ 1330  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1331  nvcc 5thmayfinal.cu 
+ 1332  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1333  nvtop
+ 1334  nvcc 5thmayfinal.cu 
+ 1335  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1336  nvcc 5thmayfinal.cu 
+ 1337  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1338  nvcc 5thmayfinal.cu 
+ 1339  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1340  nvtop
+ 1341  nvcc 5thmayfinal.cu 
+ 1342  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1343  touch edge.sh
+ 1344  chmod +x edge.sh
+ 1345  vim edge.sh
+ 1346  ./edge.sh
+ 1347  nvcc 5thmayfinal.cu 
+ 1348  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1349  ./edge.sh
+ 1350  vim edge.sh 
+ 1351  nvcc 5thmayfinal.cu 
+ 1352  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1353  nvtop
+ 1354  nvcc 5thmayfinal.cu 
+ 1355  ./edge.sh
+ 1356  cd amazon0302_adj/
+ 1357  gpmetis temp.graph 4
+ 1358  cd amazon0302_adj/
+ 1359  gpmetis temp.graph 4
+ 1360  nvtop
+ 1361  nvcc 5thmayfinal.cu 
+ 1362  ./edge.sh
+ 1363  vim edge.sh 
+ 1364  nvcc 5thmayfinal.cu 
+ 1365  ./edge.sh
+ 1366  nvcc 5thmayfinal.cu 
+ 1367  ./edge.sh
+ 1368  nvcc 6thmay.cu 
+ 1369  ./a.out ./amazon0302_adj 262111 1799584 2
+ 1370  vim finalpartition.txt 
+ 1371  ./edge.sh
+ 1372  nvcc 5thmayfinal.cu 
+ 1373  ./edge.sh
+ 1374  nvcc 6thmayfi.cu 
+ 1375  vim edge.sh 
+ 1376  nvcc 5thmayfinal.cu 
+ 1377  ./edge.sh
+ 1378  nvcc 11thaprilfinal.cu 
+ 1379  ./a.out ./amazon0302_adj 262111 1799584 4
+ 1380  nvcc 19thapril.cu 
+ 1381  ./a.out ./amazon0302_adj 262111 1799584 4
+ 1382  nvcc 6thmayfi.cu 
+ 1383  nvcc 5thmayfinal.cu 
+ 1384  ./edge.sh
+ 1385  nvcc 5thmayfinal.cu 
+ 1386  ./edge.sh
+ 1387  exit
+ 1388  cd amazon0302_adj/
+ 1389  gpmetis temp.graph 8
+ 1390  nvcc 5thmayfinal.cu 
+ 1391  vim edge.sh 
+ 1392  nvcc 5thmayfinal.cu 
+ 1393  ./edge.sh
+ 1394  nvtop
+ 1395  nvcc 5thmayfinal.cu 
+ 1396  ./edge.sh
+ 1397  nvcc 7thmay.cu 
+ 1398  ./edge.sh
+ 1399  nvcc 7thmay.cu 
+ 1400  ./edge.sh
+ 1401  nvcc 7thmay.cu 
+ 1402  ./edge.sh
+ 1403  nvcc 7thmay.cu 
+ 1404  ./edge.sh
+ 1405  nvcc 7thmay.cu 
+ 1406  ./edge.sh
+ 1407  nvcc 7thmay.cu 
+ 1408  ./edge.sh
+ 1409  nvcc 7thmay.cu 
+ 1410  ./edge.sh
+ 1411  nvcc 7thmay.cu 
+ 1412  ./edge.sh
+ 1413  nvcc 7thmay.cu 
+ 1414  vim edge.sh 
+ 1415  ./edge.sh
+ 1416  vim edge.sh 
+ 1417  ./edge.sh
+ 1418  nvcc 7thmay.cu 
+ 1419  ./edge.sh
+ 1420  nvtop
+ 1421  exit
+ 1422  nvcc 7thApril.cu 
+ 1423  ./a.out ./amazon0302_adj 262111 1799584 4
+ 1424  nvcc 7thApril.cu 
+ 1425  vim edge.sh 
+ 1426  nvcc 7thApril.cu 
+ 1427  vim 7thApril.cu 
+ 1428  vim 7thmay.cu 
+ 1429  nvcc 7thmay.cu 
+ 1430  ./edge.sh
+ 1431  vim 7thmay.cu 
+ 1432  nvcc 7thmay.cu 
+ 1433  ./edge.sh
+ 1434  vim edge.sh 
+ 1435  ./edge.sh
+ 1436  vim edge.sh 
+ 1437  ./edge.sh
+ 1438  vim 7thmay.cu 
+ 1439  nvcc 7thmay.cu 
+ 1440  ./edge.sh
+ 1441  vim 7thmay.cu 
+ 1442  vim edge.sh 
+ 1443  vim 7thmay.cu 
+ 1444  nvcc 7thmay.cu 
+ 1445  ./edge.sh
+ 1446  vim edge.sh 
+ 1447  ./edge.sh
+ 1448  nvcc 8thmay.cu 
+ 1449  ./edge.sh
+ 1450  exit
+ 1451  cd amazon0302_adj/
+ 1452  gpmetis temp.graph 4
+ 1453  gpmetis temp.graph 8
+ 1454  gpmetis temp.graph 16
+ 1455  cd amazon0302_adj/
+ 1456  gpmetis temp.graph 8
+ 1457  gpmetis temp.graph 4
+ 1458  gpmetis temp.graph 8
+ 1459  gpmetis temp.graph 4
+ 1460  gpmetis temp.graph 8
+ 1461  gpmetis temp.graph 4
+ 1462  nvcc 8thmay.cu 
+ 1463  ./edge.sh
+ 1464  nvcc 7thApril.cu 
+ 1465  ./edge.sh
+ 1466  nvcc 7thmay.cu 
+ 1467  ./edge.sh
+ 1468  nvcc 8thmay.cu 
+ 1469  vim edge.sh 
+ 1470  ./edge.sh
+ 1471  nvcc 8thmay.cu 
+ 1472  ./edge.sh
+ 1473  nvcc 7thmay.cu 
+ 1474  ./edge.sh
+ 1475  nvcc 8thmay.cu 
+ 1476  ./edge.sh
+ 1477  nvcc 7thmay.cu 
+ 1478  ./edge.sh
+ 1479  vim edge.sh 
+ 1480  nvcc 8thmay.cu 
+ 1481  ./edge.sh
+ 1482  vim 8thmay.cu 
+ 1483  nvcc 8thmay.cu 
+ 1484  ./edge.sh
+ 1485  nvcc 8thmay.cu 
+ 1486  ./edge.sh
+ 1487  vim edge.sh 
+ 1488  nvcc 8thmay.cu 
+ 1489  ./edge.sh
+ 1490  cd amazon0302_adj/
+ 1491  gpmetis temp.graph 4
+ 1492  gpmetis temp.graph 16
+ 1493  nvcc 8thmay.cu 
+ 1494  ./edge.sh
+ 1495  vim edge.sh 
+ 1496  ./edge.sh
+ 1497  cd amazon0302_adj/
+ 1498  gpmetis temp.graph 16
+ 1499  vim 8thmay.cu 
+ 1500  nvcc 8thmay.cu 
+ 1501  ./edge.sh
+ 1502  nvcc 8thmay.cu 
+ 1503  ./edge.sh
+ 1504  cd amazon0302_adj/
+ 1505  gpmetis temp.graph 16
+ 1506  ls
+ 1507  cd orkut/
+ 1508  gpmetis temp.graph 2
+ 1509  gpmetis temp.graph 4
+ 1510  gpmetis temp.graph 8
+ 1511  nvcc 7thmay.cu 
+ 1512  ./edge.sh
+ 1513  vim edge.sh 
+ 1514  nvcc 7thmay.cu 
+ 1515  ./edge.sh
+ 1516  vim 8thmay.cu 
+ 1517  nvcc 8thmay.cu 
+ 1518  ./edge.sh
+ 1519  vim 8thmay.cu 
+ 1520  nvcc 8thmay.cu 
+ 1521  ./edge.sh
+ 1522  nvcc 8thmay.cu 
+ 1523  ./edge.sh
+ 1524  cd ..
+ 1525  cd Dataset/
+ 1526  cd GraphChallange/
+ 1527  ls
+ 1528  cp ca-GrQc_adj.tsv /data/amitesh/Grqc
+ 1529  cp ogbn-arxiv.tsv /data/amitesh/arxiv
+ 1530  cp soc-Slashdot0902_adj.tsv /data/amitesh/slashdot
+ 1531  cp email-EuAll_adj.tsv /data/amitesh/email
+ 1532  cd ..
+ 1533  ls
+ 1534  cd konect_dataset/
+ 1535  ls
+ 1536  cd twitter/
+ 1537  ls
+ 1538  cd ..
+ 1539  cd uk-2007
+ 1540  ls
+ 1541  cd ...
+ 1542  cd ..
+ 1543  ls
+ 1544  Metis_Dataset/
+ 1545  ls
+ 1546  cd Metis_Dataset/
+ 1547  ls
+ 1548  cd ..
+ 1549  cd WebGraph/
+ 1550  ls
+ 1551  cd webgraph/
+ 1552  ls
+ 1553  cd ..
+ 1554  apache-ant-1.10.15/
+ 1555  cd apache-ant-1.10.15/
+ 1556  ls
+ 1557  cd ..
+ 1558  ls
+ 1559  cd clean_undir_dataset/
+ 1560  ls
+ 1561  cd ..
+ 1562  cd clueweb12/
+ 1563  ls
+ 1564  cd ..
+ 1565  Med_dataset/
+ 1566  cd Med_dataset/
+ 1567  ls
+ 1568  cd twirrer7
+ 1569  cd twitter7
+ 1570  ls
+ 1571  cd ..
+ 1572  cd it-2004/
+ 1573  ls
+ 1574  cd ..
+ 1575  cd livejournal/
+ 1576  ls
+ 1577  cd ..
+ 1578  ls
+ 1579  cd gnn_dataset/
+ 1580  ls
+ 1581  cd amazon_gnn_data/
+ 1582  ls
+ 1583  cd ..
+ 1584  cd GraphChallange/
+ 1585  ls
+ 1586  cp p2p-Gnutella31_adj.tsv /data/amitesh/Gnutella
+ 1587  cp p2p-Gnutella30_adj.tsv /data/amitesh/Gnutella
+ 1588  cp p2p-Gnutella04_adj.tsv /data/amitesh/Gnutella
+ 1589  cp p2p-Gnutella25_adj.tsv /data/amitesh/Gnutella
+ 1590  cp p2p-Gnutella24_adj.tsv /data/amitesh/Gnutella
+ 1591  cp p2p-Gnutella25_adj.tsv /data/amitesh/Gnutella
+ 1592  cp p2p-Gnutella09_adj.tsv /data/amitesh/Gnutella
+ 1593  cp p2p-Gnutella08_adj.tsv /data/amitesh/Gnutella
+ 1594  cp loc-brightkite_edges_adj.tsv /data/amitesh/bright
+ 1595  cp email-EuAll_adj.tsv /data/amitesh/email
+ 1596  cp email-Euron_adj.tsv /data/amitesh/email
+ 1597  cp email-Enron_adj.tsv /data/amitesh/email
+ 1598  cp cit-HepTh_adj.tsv /d/data/amitesh/HepTh
+ 1599  cp cit-HepTh_adj.tsv /data/amitesh/HepTh
+ 1600  cp cit-HepPh_adj.tsv /data/amitesh/HepTh
+ 1601  cp ca-HepPh_adj.tsv /data/amitesh/HepTh
+ 1602  cp ca-CondMat_adj.tsv /data/amitesh/HepTh/
+ 1603  cp ca-AstroPh_adj.tsv /data/amitesh/HepTh/
+ 1604  cp as-caida20071105_adj.tsv /data/amitesh/HepTh/
+ 1605  cp as20000102_adj.tsv /data/amitesh/HepTh/
+ 1606  cp graph500-scale18-ef16_adj.tsv  /data/amitesh/HepTh/
+ 1607  cd flicker/
+ 1608  gpmetis temp.graph 4
+ 1609  gpmetis temp.graph 8
+ 1610  cd ..
+ 1611  mkdir Grqc
+ 1612  cd Grqc/
+ 1613  python3 conversion.py ca-GrQc_adj.tsv 
+ 1614  gpmetis temp.graph 2
+ 1615  cd ..'
+ 1616  cd ..
+ 1617  mkdir arxiv
+ 1618  cd arxiv/
+ 1619  python3 conversion.py ogbn-arxiv.tsv 
+ 1620  gpmetis temp.graph 2
+ 1621  cd ..
+ 1622  mkdir slashdot
+ 1623  cd slashdot/
+ 1624  cd ..
+ 1625  makidr email
+ 1626  mkdir email
+ 1627  cd email/
+ 1628  python3 conversion.py email-EuAll_adj.tsv 
+ 1629  gpmetis temp.graph 2
+ 1630  mkdir Gnutella
+ 1631  cd ..
+ 1632  mkdir Gnutella
+ 1633  cd Gnutella/
+ 1634  python3 conversion.py p2p-Gnutella31_adj.tsv 
+ 1635  gpmetis temp.graph 2
+ 1636  rm p2p-Gnutella31_adj.tsv 
+ 1637  ls
+ 1638  python3 conversion.py p2p-Gnutella30_adj.tsv 
+ 1639  gpmetis temp.graph 2
+ 1640  rm p2p-Gnutella30_adj.tsv 
+ 1641  python3 conversion.py p2p-Gnutella04_adj.tsv 
+ 1642  gpmetis temp.graph 2
+ 1643  rm p2p-Gnutella30_adj.tsv 
+ 1644  rm p2p-Gnutella04_adj.tsv 
+ 1645  python3 conversion.py p2p-Gnutella25_adj.tsv 
+ 1646  gpmetis temp.graph 2
+ 1647  rm p2p-Gnutella25_adj.tsv 
+ 1648  python3 conversion.py p2p-Gnutella24_adj.tsv 
+ 1649  gpmetis temp.graph 2
+ 1650  rm p2p-Gnutella25_adj.tsv 
+ 1651  rm p2p-Gnutella24_adj.tsv 
+ 1652  ls
+ 1653  python3 conversion.py p2p-Gnutella09_adj.tsv 
+ 1654  gpmetis temp.graph 2
+ 1655  rm p2p-Gnutella09_adj.tsv 
+ 1656  python3 conversion.py p2p-Gnutella08_adj.tsv 
+ 1657  gpmetis temp.graph 2
+ 1658  cd ..
+ 1659  mkdir bright
+ 1660  cd bright/
+ 1661  python3 conversion.py loc-brightkite_edges_adj.tsv 
+ 1662  gpmetis temp.graph 2
+ 1663  cd ..
+ 1664  cd email/
+ 1665  ls
+ 1666  rm email-EuAll_adj.tsv 
+ 1667  python3 conversion.py email-Enron_adj.tsv 
+ 1668  gpmetis temp.graph 2
+ 1669  cd ..
+ 1670  mkdir HepTh
+ 1671  cd HepTh/
+ 1672  python3 conversion.py cit-HepTh_adj.tsv 
+ 1673  gpmetis temp.graph 2
+ 1674  rm cit-HepTh_adj.tsv 
+ 1675  python3 conversion.py cit-HepPh_adj.tsv 
+ 1676  gpmetis temp.graph 2
+ 1677  rm cit-HepPh_adj.tsv 
+ 1678  python3 conversion.py ca-HepPh_adj.tsv 
+ 1679  gpmetis temp.graph 2
+ 1680  rm ca-HepPh_adj.tsv 
+ 1681  python3 conversion.py ca-CondMat_adj.tsv 
+ 1682  gpmetis temp.graph 2
+ 1683  rm ca-CondMat_adj.tsv 
+ 1684  python3 conversion.py ca-AstroPh_adj.tsv 
+ 1685  gpmetis temp.graph 2
+ 1686  rm ca-AstroPh_adj.tsv 
+ 1687  python3 conversion.py as-caida20071105_adj.tsv 
+ 1688  gpmeti
+ 1689  rm as-caida20071105_adj.tsv 
+ 1690  python3 conversion.py as
+ 1691  python3 conversion.py as20000102_adj.tsv 
+ 1692  gpmetis temp.graph 2
+ 1693  rm as20000102_adj.tsv 
+ 1694  python3 conversion.py graph500-scale18-ef16_adj.tsv 
+ 1695  gpmetis temp.graph 2
+ 1696  cd ..
+ 1697  mv HepTh graph500-scale18-ef16_adj
+ 1698  cd graph500-scale18-ef16_adj/
+ 1699  ls
+ 1700  gpmetis temp.graph 2
+ 1701  gpmetis temp.graph 4
+ 1702  gpmetis temp.graph 8
+ 1703  nvcc 8thmay.cu 
+ 1704  ./edge.sh
+ 1705  vim 8thmay.cu 
+ 1706  nvcc 8thmay.cu 
+ 1707  ./edge.sh
+ 1708  vim 8thmay.cu 
+ 1709  nvcc 8thmay.cu 
+ 1710  ./edge.sh
+ 1711  vim edge.sh 
+ 1712  nvcc 7thmay.cu 
+ 1713  ./edge.sh
+ 1714  vim edge.sh 
+ 1715  nvcc 7thmay.cu 
+ 1716  ./edge.sh
+ 1717  nvcc 8thmay.cu 
+ 1718  ./edge.sh
+ 1719  vim 8thmay.cu 
+ 1720  nvcc 8thmay.cu 
+ 1721  ./edge.sh
+ 1722  vim edge.sh 
+ 1723  nvcc 7thmay.cu 
+ 1724  ./edge.sh
+ 1725  nvcc 8thmay.cu 
+ 1726  ./edge.sh
+ 1727  vim edge.sh 
+ 1728  nvcc 7thmay.cu 
+ 1729  ./edge.sh
+ 1730  vim edge.sh 
+ 1731  ./edge.sh
+ 1732  nvcc 7thmay.cu 
+ 1733  ./edge.sh
+ 1734  vim edge.sh 
+ 1735  ./edge.sh
+ 1736  nvcc 7thmay.cu 
+ 1737  ./edge.sh
+ 1738  nvcc 8thmay.cu 
+ 1739  ./edge.sh
+ 1740  vim 8thmay.cu 
+ 1741  ./edge.sh
+ 1742  nvcc 8thmay.cu 
+ 1743  ./edge.sh
+ 1744  nvcc 19thapril.cu 
+ 1745  ./edge.sh
+ 1746  vim 19thapril.cu 
+ 1747  nvcc 19thapril.cu 
+ 1748  ./edge.sh
+ 1749  nvcc 7thmay.cu 
+ 1750  ./edge.sh
+ 1751  vim edge.sh 
+ 1752  nvcc 7thmay.cu 
+ 1753  ./edge.sh
+ 1754  vim edge.sh 
+ 1755  ./edge.sh
+ 1756  cd /data/Dataset/GraphChallange
+ 1757  cp graph500-scale21-ef16_adj.t /data/amitesh/graph500-scale21-ef16_adj
+ 1758  cp graph500-scale21-ef16_adj.tsv /data/amitesh/graph500-scale21-ef16_adj
+ 1759  mkdir graph500-scale21-ef16_adj
+ 1760  cd graph500-scale21-ef16_adj/
+ 1761  python3 conversion.py graph500-scale21-ef16_adj.tsv 
+ 1762  gpmetis temp.graph 2
+ 1763  gpmetis temp.graph 4
+ 1764  vim edge.sh 
+ 1765  nvcc 7thmay.cu 
+ 1766  ./edge.sh
+ 1767  nvcc 7thmay.cu 
+ 1768  ./edge.sh
+ 1769  vim edge.sh 
+ 1770  nvcc 7thmay.cu 
+ 1771  ./edge.sh
+ 1772  cd graph500-scale21-ef16_adj
+ 1773  gpmetis temp.graph 8
+ 1774  vim edge.sh 
+ 1775  nvcc 7thmay.cu 
+ 1776  ./edge.sh
+ 1777  nvcc 11thmay.cu 
+ 1778  ./edge.sh
+ 1779  nvcc 11thmay.cu 
+ 1780  ./edge.sh
+ 1781  nvcc 7thmay.cu 
+ 1782  ./edge.sh
+ 1783  nvcc 11thmay.cu 
+ 1784  nvcc 7thmay.cu 
+ 1785  ./edge.sh
+ 1786  nvcc 11thmay.cu 
+ 1787  ./edge.sh
+ 1788  nvcc 7thmay.cu 
+ 1789  ./edge.sh
+ 1790  nvcc 11thmay.cu 
+ 1791  ./edge.sh
+ 1792  nvcc 7thmay.cu 
+ 1793  ./edge.sh
+ 1794  nvcc 8thmay.cu 
+ 1795  ./edge.sh
+ 1796  vim 7thmay.cu 
+ 1797  nvcc 8thmay.cu 
+ 1798  nvcc 7thmay.cu 
+ 1799  ./edge.sh
+ 1800  vim 8thmay.cu 
+ 1801  nvcc 8thmay.cu 
+ 1802  ./edge.sh
+ 1803  vim 8thmay.cu 
+ 1804  nvcc 8thmay.cu 
+ 1805  ./edge.sh
+ 1806  vim 8thmay.cu 
+ 1807  nvcc 8thmay.cu 
+ 1808  ./edge.sh
+ 1809  nvcc 7thmay.cu 
+ 1810  ./edge.sh
+ 1811  vim edge.sh 
+ 1812  nvcc 7thmay.cu 
+ 1813  ./edge.sh
+ 1814  nvcc 8thmay.cu 
+ 1815  ./edge.sh
+ 1816  mikdir graph500-scale22-ef16_adj
+ 1817  mkdir graph500-scale22-ef16_adj
+ 1818  vim edge.sh 
+ 1819  nvcc 7thmay.cu 
+ 1820  ./edge.sh
+ 1821  mkdir  graph500-scale20-ef16_adj
+ 1822  cd graph500-scale20-ef16_adj/
+ 1823  python
+ 1824  gpmetis temp.graph 2
+ 1825  cd ..
+ 1826  cd graph500-scale21-ef16_adj/
+ 1827  gpmetis temp.graph 8
+ 1828  cd ..
+ 1829  cd graph500-scale20-ef16_adj/
+ 1830  gpmetis temp.graph 2
+ 1831  vim weight.txt 
+ 1832  python3 conversion.py graph500-scale20-ef16_adj.tsv 
+ 1833  cd ..
+ 1834  cp convert_to_metis.py /data/amitesh/graph500-scale22-ef16_adj
+ 1835  cd graph500-scale22-ef16_adj/
+ 1836  cd ..
+ 1837  graph500-scale20-ef16_adj
+ 1838  cd graph500-scale20-ef16_adj
+ 1839  cp conversion.py /data/amitesh/graph500-scale22-ef16_adj
+ 1840  cd ..
+ 1841  cd graph500-scale22-ef16_adj
+ 1842  python3 conversion.py graph500-scale22-ef16_adj.tsv 
+ 1843  gpmetis temp.graph 2
+ 1844  cd ..
+ 1845  cd /Dataset/GraphChallange
+ 1846  cd Dataset/GraphChallange
+ 1847  ls
+ 1848  cp graph500-scale20-ef16_adj.tsv /data/amitesh/graph500-scale20-ef16_adj
+ 1849  cp graph500-scale22-ef16_adj.tsv /data/amitesh/graph500-scale22-ef16_adj
+ 1850  cd ..
+ 1851  cd amitesh/
+ 1852  cd twitch_gamer/
+ 1853  gpmetis temp.graph 2
+ 1854  cd amazon0302_adj/
+ 1855  gpmetis tmep.2
+ 1856  cd amazon0302_adj/
+ 1857  gpmetis temp.graph 2
+ 1858  nvcc 7thmay.cu 
+ 1859  ./edge.sh
+ 1860  ./a.out ./amazon0302_adj/ 262111 1799584
+ 1861  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1862  nvcc 19thapril.cu 
+ 1863  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1864  nvcc 7thmay.cu 
+ 1865  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1866  cd amazon0302_adj/
+ 1867  gpmetis temp.graph 2
+ 1868  vim 7thmay.cu 
+ 1869  vim 7thmay.cu ls
+ 1870  nvcc 7thmay.cu 
+ 1871  ls
+ 1872  vim 'Code Running Manual.docx'
+ 1873  nvcc CoarseningGNN.cu 
+ 1874  ./a.out ./twitch_gamer/ 168114 13595114
+ 1875  ls 
+ 1876  nvcc GNNcoarsening.cu 
+ 1877  ./a.out ./twitch_gamer/ 168114 13595114
+ 1878  ls
+ 1879  nvcc CoarseningPerfect.cu 
+ 1880  ./a.out ./twitch_gamer/ 168114 13595114
+ 1881  Vim final_vertex_mapping.txt 
+ 1882  vim final_vertex_mapping.txt 
+ 1883  ls
+ 1884  nvcc 7thmay.cu 
+ 1885  ./a.out 
+ 1886  ./twitch_gamer/ 168114 13595114
+ 1887  ./a.out ./twitch_gamer/ 168114 13595114
+ 1888  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1889  ls
+ 1890  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1891  ls
+ 1892  mkdir AMITESH
+ 1893  cp -r * AMITESH/
+ 1894  mv * AMITESH/
+ 1895  ls
+ 1896  mv amazon0302_adj/ arxiv/ backup_txt_files/ AMITESH/
+ 1897  mv -r amazon0302_adj/ arxiv/ backup_txt_files/ AMITESH/
+ 1898  ls -ltrh
+ 1899  cd AMITESH/
+ 1900  ls
+ 1901  cd ../
+ 1902  mkdir -p Rupam
+ 1903  ls
+ 1904  cd AMITESH/
+ 1905  ls -ltrh
+ 1906  cp 7thmay.cu ../Rupam/
+ 1907  cd ../Rupam/
+ 1908  ls
+ 1909  vim 7thmay.cu 
+ 1910  pwd
+ 1911  ls
+ 1912  cd Rupam/
+ 1913  ls
+ 1914  nvcc 7thmay.cu 
+ 1915  ls
+ 1916  ./a.out ./amazon0302_adj/ 262111 1799584 
+ 1917  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1918  cd ..
+ 1919  ls
+ 1920  cp amazon0302_adj/ Rupam/
+ 1921  cp -r  amazon0302_adj/ Rupam/
+ 1922  ls
+ 1923  cd Rupam/
+ 1924  ls
+ 1925  ./a.out ./amazon0302_adj/ 262111 1799584 4
+ 1926  ls
+ 1927  vim finalpartition.txt 
+ 1928  scp -r amitesh@10.10.2.111:/data/amitesh/Rupam C:\Users\iamru\Desktop\My Desktop
+ 1929  scp -r amitesh@10.10.2.111:/data/amitesh/Rupam .
+ 1930  ls
+ 1931  cd Rupam/
+ 1932  ls
+ 1933  cd ..
+ 1934  ls
+ 1935  cd Rupam/
+ 1936  ls
+ 1937  cd Rupam/
+ 1938  ls
+ 1939  cd Rupam/
+ 1940  ls
+ 1941  cd ....
+ 1942  cd ..
+ 1943  cd..
+ 1944  ls
+ 1945  cd ..
+ 1946  ls
+ 1947  cd Rupam/
+ 1948  ls
+ 1949  rm Rupam/
+ 1950  rm -r Rupam/
+ 1951  ls
+ 1952  ls -l
+ 1953  vim output.graph
+ 1954  ls
+ 1955  cd Rupam/
+ 1956  ls
+ 1957  ls -a
+ 1958  ls -l
+ 1959  scp --version
+ 1960  ls
+ 1961  cd Rupam/
+ 1962  ls
+ 1963  pwd
+ 1964  scp amitesh@10.10.2.111:/data/amitesh/Rupam/amazon0302_adj /home/roy/Desktop/'Project Graph'
+ 1965  scp amitesh@10.10.2.111:/data/amitesh/Rupam/amazon0302_adj /home/roy/Desktop/'Project Graph'/amazon0302_adj
+ 1966  scp amitesh@10.10.2.111:/data/amitesh/Rupam/finalpartition.txt  /home/roy/Desktop/'Project Graph'
+ 1967  scp amitesh@10.10.2.111:/data/amitesh/Rupam/finalpartition.txt  /home/roy/Desktop
+ 1968  history
+ 1969  ls
+ 1970  cd Rupam/
+ 1971  ls
+ 1972  nvcc 7thmay.cu -o 7thmay
+ 1973  ./7thmay ./amazon0302_adj/ 262111 1799584 4
+ 1974  pwd
+ 1975  ls
+ 1976  ls -a
+ 1977  cd ..
+ 1978  ls
+ 1979  cd AMITESH/
+ 1980  ls
+ 1981  cd ..
+ 1982  ls
+ 1983  cd Rupam/
+ 1984  ls
+ 1985  cd Rupam/
+ 1986  ls
+ 1987  cd amazon0302_adj/
+ 1988  ls
+ 1989  python --version
+ 1990  python3 --version
+ 1991  python3 without_part_preprocess_copy.py 
+ 1992  cd Rupam/
+ 1993  ls
+ 1994  pwd
+ 1995  ls
+ 1996  cd amazon0302_adj/
+ 1997  ls
+ 1998  history
+ 1999  ls
+ 2000  cd Rupam/
+ 2001  ls
+ 2002  mkdir myenv
+ 2003  ls
+ 2004  mv amazon0302_adj/outamazon0302_adjj.tsv myenv
+ 2005  ls
+ 2006  cd myenv/
+ 2007  ls
+ 2008  cd ..
+ 2009  ls
+ 2010  mv amazon0302_adj/without_part_preprocess_copy.py myenv
+ 2011  ls
+ 2012  cd history
+ 2013  history
+ 2014  history > record.txt
