@@ -154,8 +154,8 @@ Replace `sm_60` with the compute capability of your GPU (e.g., `sm_75` for NVIDI
 
 ## 📤 Outputs
 
-- `part_result.txt`: Contains the partition ID assigned to each vertex.
-- `comm_cost.txt` (optional): May include metrics like communication cost or load balancing information.
+- `output.graph.part.<num_partitions>`: Contains the initial partition assignments for each vertex, as computed by METIS during the initial partitioning phase.
+- `finalpartition.txt` : Contains the final, refined partition assignments for each vertex after GPU-accelerated deterministic refinement, optimizing edge cut and partition balance.
 
 ---
 
