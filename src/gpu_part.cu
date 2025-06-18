@@ -117,6 +117,7 @@ __global__ void mapVertices(int* match, int* cmap, int numVertices) {
     }
 }
 
+
 // Kernel to relabel coarse vertices and create a traceback array for uncoarsening.
 __global__ void relabel_coarse_vertices_kernel(int* CMap, int* New_CMap, int* label_map, int* traceBack, int num_elements, int* count) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -310,6 +311,7 @@ __global__ void markCandidates(int numVertices, const float* gain, bool* candida
     candidate[v] = balancePhase ? (gain[v] > -50.0f) : (gain[v] > -10.0f);
 }
 
+
 // Kernel to select move candidates using a token-passing conflict resolution mechanism.
 __global__ void tokenPassing(int numVertices, const int* xadj, const int* adjncy, const float* gain, const bool* candidate, bool* finalCandidate, int nedges) {
     int v = blockIdx.x * blockDim.x + threadIdx.x;
@@ -329,6 +331,7 @@ __global__ void tokenPassing(int numVertices, const int* xadj, const int* adjncy
     }
     finalCandidate[v] = win;
 }
+
 
 // Kernel to buffer selected candidate moves into a move buffer.
 __global__ void bufferCandidateMoves(int numVertices, const int* partition, const int* target, const float* gain, const bool* finalCandidate, Move* moveBuffer, int* globalMoveCount, int* outCounter, int* inCounter, int maxMoves, int numPartitions) {
@@ -364,6 +367,7 @@ __global__ void computeAvailableCapacity(int numPartitions, const int* partCount
     if (avail[q] > maxSize - current + slack) avail[q] = maxSize - current + slack;
     if (current <= minSize && !balancePhase) avail[q] = cudaMin(avail[q], slack / 2);
 }
+
 
 // Kernel to select moves based on available partition capacity.
 __global__ void selectMoves(int totalMoves, Move* moveBuffer, const int* avail, bool* selectedFlag, int* destCounts, int numPartitions) {
@@ -754,6 +758,7 @@ void deterministicRefinement(int nvtxs, int nedges, int* d_xadj, int* d_adjncy, 
     refinementOverheadTime += getTime() - start - refinementKernelTime;
 }
 
+
 // Kernel to map partitions from coarse to fine graph during uncoarsening.
 __global__ void kwayMapCoarseToFine(int* traceBack, int* partition, int* current_partition, int coarse_nvtxs, int fine_nvtxs, int numPartitions) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
@@ -765,6 +770,7 @@ __global__ void kwayMapCoarseToFine(int* traceBack, int* partition, int* current
     if (v1 >= 0 && v1 < fine_nvtxs) current_partition[v1] = coarse_part;
     if (v2 >= 0 && v2 < fine_nvtxs) current_partition[v2] = coarse_part;
 }
+
 
 // Function to check if the match array has converged between iterations.
 bool checkMatchEquality(thrust::device_vector<int>& d_match, thrust::host_vector<int>& h_match_prev, int size) {
@@ -888,7 +894,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Set coarsening threshold: stop when vertices <= max(500, nvtxs/500).
-    int target_vertices = std::max(500, nvtxs / 500);
+    int target_vertices = std::max(500, nvtxs / 500); 
 
     // Allocate host memory for graph data in CSR format.
     int* h_xadj = new int[nvtxs + 1];
@@ -1287,11 +1293,30 @@ int main(int argc, char* argv[]) {
 
     // Write final partition to output file.
     startTime = getTime();
-    std::ofstream output_partition_file("./finalpartition.txt");
+    std::vector<std::vector<int>> vertices_by_partition(numPartitions);
     for (int i = 0; i < nvtxs; i++) {
-        output_partition_file << h_final_partition[i];
-        if (i < nvtxs - 1) output_partition_file << ", ";
-        else output_partition_file << "\n";
+        int part = h_final_partition[i];
+        if (part >= 0 && part < numPartitions) {
+            vertices_by_partition[part].push_back(i);
+        } else {
+            vertices_by_partition[0].push_back(i);
+        }
+    }
+    std::ofstream output_partition_file("./finalpartition.txt");
+    if (!output_partition_file.is_open()) {
+        std::cerr << "Error: Cannot open finalpartition.txt for writing\n";
+        exit(EXIT_FAILURE);
+    }
+    for (int k = 0; k < numPartitions; k++) {
+        output_partition_file << "Partition " << k << ": ";
+        const auto& vertices = vertices_by_partition[k];
+        for (size_t i = 0; i < vertices.size(); i++) {
+            output_partition_file << vertices[i];
+            if (i < vertices.size() - 1) {
+                output_partition_file << ",";
+            }
+        }
+        output_partition_file << "\n";
     }
     output_partition_file.close();
     PartitionFileWriteTime = getTime() - startTime;
